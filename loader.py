@@ -6,6 +6,7 @@ import subprocess
 
 X86_64_ELF = "{{ X86_64_ELF }}"
 ARM_ELF = "{{ ARM_ELF }}"
+AARCH64_ELF = "{{ AARCH64_ELF }}"
 
 
 def load(encoded_elf):
@@ -33,6 +34,8 @@ def main():
         load(X86_64_ELF)
     elif arch == "arm":
         load(ARM_ELF)
+    elif arch == "aarch64":
+        load(AARCH64_ELF)
     else:
         print("fuck your cpu", arch)
 
