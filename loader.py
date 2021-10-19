@@ -32,7 +32,7 @@ def main():
     arch = platform.machine()
     if arch == "x86_64":
         load(X86_64_ELF)
-    elif arch == "arm":
+    elif arch == "armv7l":
         load(ARM_ELF)
     elif arch == "aarch64":
         load(AARCH64_ELF)
