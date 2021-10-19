@@ -33,6 +33,8 @@ def main():
         load(X86_64_ELF)
     elif arch == "arm":
         load(ARM_ELF)
+    else:
+        print("fuck your cpu", arch)
 
 
 if __name__ == "__main__":
